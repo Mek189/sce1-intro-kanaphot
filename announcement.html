@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ประกาศผลการสมัคร</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="announcement-page">
+
+	<!-- ส่วนหัวเว็บไซต์: แสดงโลโก้และชื่อมหาวิทยาลัย -->
+	<header class="header">
+		<div class="logo">
+			<img src="img/logo_kmutnb.png" alt="Logo มจพ.">
+		</div>
+
+		<div>
+			<h1>รับสมัครนักศึกษา</h1>
+			<p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (วิทยาเขตปราจีนบุรี)</p>
+		</div>
+	</header>
+
+	<!-- เมนูนำทางหลักของเว็บไซต์ -->
+	<nav class="navbar">
+		<a href="index.html">หน้าแรก</a>
+		<a href="from.html">รับสมัคร <span class="arrow">▼</span></a>
+		<a href="group.html">หลักสูตรและคณะ <span class="arrow">▼</span></a>
+		<a href="from2.html">ตรวจสอบสถานะ</a>
+		<a href="news.html">ข่าวสาร <span class="arrow">▼</span></a>
+		<a href="contact.html">ติดต่อ</a>
+		<a href="from.html" class="apply">สมัครเรียน</a>
+	</nav>
+
+	<!-- เนื้อหาหลัก: ค้นหาและแสดงผลการสมัคร -->
+	<main class="announcement-main">
+		<h2 class="announcement-title">
+			ประกาศผลการสมัคร<br>
+			ตรวจสอบผลการสมัครเข้าศึกษาต่อ
+		</h2>
+
+		<section class="announcement-panel">
+			<!-- ช่องกรอกเลขที่ใบสมัครหรือรหัสผู้สมัคร -->
+			<form class="announcement-search" id="announcement-search" action="#" method="get">
+				<label for="result-number">⌕ &nbsp;เลขที่ใบสมัคร/รหัสผู้สมัคร</label>
+				<div class="announcement-search-row">
+					<input id="result-number" name="result_number" type="text">
+					<button type="submit">ตรวจสอบ</button>
+				</div>
+			</form>
+
+			<!-- การ์ดแสดงผลการสมัคร -->
+			<section class="result-card" id="result-card" aria-label="ผลการสมัคร" aria-live="polite">
+				<div class="result-message">
+					<div class="success-icon">✓</div>
+					<div>
+						<h3>ขอแสดงความยินดี</h3>
+						<p>คุณได้รับการคัดเลือกเข้าศึกษาต่อ</p>
+					</div>
+				</div>
+
+				<div class="result-details">
+					<p><span>ชื่อ-นามสกุล</span> นาย คมพศ กล้าสำ</p>
+					<p><span>คณะ</span> เทคโนโลยีอุตสาหกรรม</p>
+					<p><span>สาขา</span> INE</p>
+					<p><span>ประเภทการรับสมัคร</span> Portfolio</p>
+				</div>
+			</section>
+		</section>
+	</main>
+
+	<!-- ส่วนท้ายเว็บไซต์: ข้อมูลติดต่อและช่องทางติดตาม -->
+	<footer class="footer">
+		<div class="contact">
+			<h3>ติดต่อสอบถาม</h3>
+			<p>
+				มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ<br>
+				วิทยาเขตปราจีนบุรี<br>
+				โทร. 037-217-300<br>
+				Email: admission@kmutnb.ac.th
+			</p>
+		</div>
+
+		<div class="social">
+			<h3>ติดตามเรา</h3>
+			<div class="social-icon">
+				<a href="https://www.kmutnb.ac.th/life-in-the-university/prachinburi.aspx" target="_blank" rel="noopener noreferrer" aria-label="ข้อมูลวิทยาเขตปราจีนบุรี">G</a>
+				<a href="https://page.line.me/486pbmxg?openQrModal=true" target="_blank" rel="noopener noreferrer" aria-label="LINE มจพ. ปราจีนบุรี">L</a>
+				<a href="https://www.facebook.com/FITM.KMUTNB" target="_blank" rel="noopener noreferrer" aria-label="Facebook FITM มจพ.">f</a>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		// แสดงผลความยินดีในหน้าเดิมหลังจากกดปุ่มตรวจสอบ
+		document.getElementById('announcement-search').addEventListener('submit', (event) => {
+			event.preventDefault();
+			document.getElementById('result-card').classList.add('is-visible');
+		});
+	</script>
+
+</body>
+</html>

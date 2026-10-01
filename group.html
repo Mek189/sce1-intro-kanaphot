@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="th">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>หลักสูตรและคณะ | มจพ. ปราจีนบุรี</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="header">
+		<a class="logo" href="index.html"><img src="img/logo_kmutnb.png" alt="ตรามหาวิทยาลัย"></a>
+		<div><h1>รับสมัครนักศึกษา</h1><p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (วิทยาเขตปราจีนบุรี)</p></div>
+	</header>
+
+	<!-- เมนูคณะใช้ details และ CSS จึงไม่ต้องใช้ JavaScript -->
+	<nav class="navbar" aria-label="เมนูหลัก">
+		<a href="index.html">หน้าแรก</a>
+		<a href="from.html">รับสมัคร</a>
+		<div class="faculty-menu">
+			<a class="faculty-trigger" href="group.html">หลักสูตรและคณะ</a>
+			<details class="faculty-toggle">
+				<summary aria-label="เปิดรายการคณะและสาขา"><span class="arrow">▼</span></summary>
+				<div class="dropdown-panel">
+				<section><a class="dropdown-title" href="it.html">คณะเทคโนโลยีสารสนเทศ (IT)</a>
+					<a href="it.html#it">IT</a><a href="it.html#ine">INE</a><a href="it.html#inet">INET</a><a href="it.html#iti">ITI</a><a href="it.html#itt">ITT</a></section>
+				<section><a class="dropdown-title" href="im.html">คณะการจัดการอุตสาหกรรม (IM)</a>
+					<a href="im.html#iem">IEM</a><a href="im.html#imt">IMT</a></section>
+				<section><a class="dropdown-title" href="cdm.html">คณะการออกแบบและบริการงานก่อสร้าง (CDM)</a>
+					<a href="cdm.html#cdm">CDM</a><a href="cdm.html#ca">CA</a></section>
+				<section><a class="dropdown-title" href="aei.html">คณะวิศวกรรมเกษตรเพื่ออุตสาหกรรม (AEI)</a>
+					<a href="aei.html#afe-afet">AFE &amp; AFET</a><a href="aei.html#mm-mmt">MM &amp; MMT</a></section>
+				</div>
+			</details>
+		</div>
+		<a href="from2.html">ตรวจสอบสถานะ</a>
+		<a href="news.html">ข่าวสาร</a>
+		<a href="contact.html">ติดต่อ</a>
+		<a href="from.html" class="apply">สมัครเรียน</a>
+	</nav>
+
+	<main class="faculty-home" id="faculties">
+		<section class="page-heading">
+			<p class="eyebrow">หลักสูตรระดับปริญญาตรี</p>
+			<h2>เลือกคณะ</h2>
+			<p>เลือกคณะเพื่อดูหลักสูตรและสาขาย่อย</p>
+		</section>
+
+		<!-- การ์ดทั้งสี่ลิงก์ไปยังหน้าแยกของแต่ละคณะ -->
+		<section class="faculty-grid" aria-label="รายชื่อคณะ">
+			<a class="faculty-card" href="it.html"><img src="img/IT.png" alt="ตัวอย่างหลักสูตรคณะเทคโนโลยีสารสนเทศ"><span class="faculty-code">IT</span><h3>คณะเทคโนโลยีสารสนเทศ</h3><span class="card-link">ดูสาขาย่อย <span aria-hidden="true">→</span></span></a>
+			<a class="faculty-card" href="im.html"><img src="img/IEM.png" alt="ตัวอย่างหลักสูตรคณะการจัดการอุตสาหกรรม"><span class="faculty-code">IM</span><h3>คณะการจัดการอุตสาหกรรม</h3><span class="card-link">ดูสาขาย่อย <span aria-hidden="true">→</span></span></a>
+			<a class="faculty-card" href="cdm.html"><img src="img/CDM.png" alt="ตัวอย่างหลักสูตรคณะการออกแบบและบริการงานก่อสร้าง"><span class="faculty-code">CDM</span><h3>คณะการออกแบบและบริการงานก่อสร้าง</h3><span class="card-link">ดูสาขาย่อย <span aria-hidden="true">→</span></span></a>
+			<a class="faculty-card" href="aei.html"><img src="img/AFE-AFET.png" alt="ตัวอย่างหลักสูตรคณะวิศวกรรมเกษตรเพื่ออุตสาหกรรม"><span class="faculty-code">AEI</span><h3>คณะวิศวกรรมเกษตรเพื่ออุตสาหกรรม</h3><span class="card-link">ดูสาขาย่อย <span aria-hidden="true">→</span></span></a>
+		</section>
+	</main>
+
+	<footer id="contact" class="faculty-footer"><a href="index.html">กลับหน้าหลัก</a><div class="social faculty-social"><h3>ติดตามเรา</h3><div class="social-icon"><a href="https://www.kmutnb.ac.th/life-in-the-university/prachinburi.aspx" target="_blank" rel="noopener noreferrer" aria-label="ข้อมูลวิทยาเขตปราจีนบุรี">G</a><a href="https://page.line.me/486pbmxg?openQrModal=true" target="_blank" rel="noopener noreferrer" aria-label="LINE มจพ. ปราจีนบุรี">L</a><a href="https://www.facebook.com/FITM.KMUTNB" target="_blank" rel="noopener noreferrer" aria-label="Facebook FITM มจพ.">f</a></div></div><span>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี</span></footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!-- ระบุว่าใช้ HTML5 -->
+<html lang="th"> <!-- ตั้งค่าภาษาของหน้าเป็นภาษาไทย -->
+<head> <!-- เริ่มส่วนตั้งค่าหน้าเว็บ -->
+	<meta charset="UTF-8"> <!-- รองรับตัวอักษรภาษาไทย -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ปรับหน้าให้เหมาะกับมือถือ -->
+	<title>ติดต่อสอบถาม | มจพ. ปราจีนบุรี</title> <!-- ชื่อที่แสดงบนแท็บเบราว์เซอร์ -->
+	<link rel="stylesheet" href="style.css"> <!-- เรียกใช้ไฟล์ตกแต่งเว็บ -->
+</head> <!-- จบส่วนตั้งค่าหน้าเว็บ -->
+<body> <!-- เริ่มเนื้อหาที่แสดงบนหน้าเว็บ -->
+	<header class="header"> <!-- ส่วนหัวและตรามหาวิทยาลัย -->
+		<a class="logo" href="index.html"><img src="img/logo_kmutnb.png" alt="ตรามหาวิทยาลัย"></a> <!-- กดตราเพื่อกลับหน้าแรก -->
+		<div> <!-- กลุ่มชื่อเว็บไซต์ -->
+			<h1>รับสมัครนักศึกษา</h1> <!-- ชื่อระบบรับสมัคร -->
+			<p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (วิทยาเขตปราจีนบุรี)</p> <!-- ชื่อมหาวิทยาลัยและวิทยาเขต -->
+		</div> <!-- จบกลุ่มชื่อเว็บไซต์ -->
+	</header> <!-- จบส่วนหัว -->
+
+	<nav class="navbar" aria-label="เมนูหลัก"> <!-- เมนูนำทางของเว็บไซต์ -->
+		<a href="index.html">หน้าแรก</a> <!-- ไปหน้าแรก -->
+		<a href="from.html">รับสมัคร</a> <!-- ไปหน้าลงทะเบียน -->
+		<a href="group.html">หลักสูตรและคณะ</a> <!-- ไปหน้ารวมหลักสูตร -->
+		<a href="from2.html">ตรวจสอบสถานะ</a> <!-- ไปหน้าตรวจสอบสถานะ -->
+		<a href="news.html">ข่าวสาร</a> <!-- ไปหน้าข่าวสาร -->
+		<a href="contact.html" aria-current="page">ติดต่อ</a> <!-- แสดงว่ากำลังอยู่หน้าติดต่อ -->
+		<a href="from.html" class="apply">สมัครเรียน</a> <!-- ปุ่มไปหน้าลงทะเบียน -->
+	</nav> <!-- จบเมนูนำทาง -->
+
+	<main class="contact-main contact-location-main"> <!-- เนื้อหาหลักหน้าติดต่อ -->
+		<div class="contact-layout"> <!-- แบ่งพื้นที่แผนที่และข้อมูลติดต่อ -->
+			<section class="contact-map" aria-label="แผนที่คณะ"> <!-- แสดงแผนที่และลิงก์นำทาง -->
+				<iframe title="แผนที่คณะเทคโนโลยีและการจัดการอุตสาหกรรม" src="https://www.google.com/maps?q=Faculty%20of%20Industrial%20Technology%20and%20Management%20KMUTNB%20Prachinburi&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- ฝังแผนที่ Google Maps -->
+				<a href="https://maps.app.goo.gl/MMH8UwDGwNbUce7X7" target="_blank" rel="noopener noreferrer">https://maps.app.goo.gl/MMH8UwDGwNbUce7X7</a> <!-- เปิดลิงก์แผนที่ในแท็บใหม่ -->
+			</section> <!-- จบส่วนแผนที่ -->
+			<section class="contact-info" aria-label="ข้อมูลคณะและช่องทางติดต่อ"> <!-- แสดงที่อยู่และช่องทางติดต่อ -->
+				<div class="contact-address"> <!-- ข้อมูลที่อยู่คณะ -->
+					<span aria-hidden="true">📍</span> <!-- หมุดแสดงตำแหน่งคณะ -->
+					<h2>คณะเทคโนโลยีและการจัดการอุตสาหกรรม</h2> <!-- ชื่อคณะ -->
+					<p>129 หมู่ 21 ต.เนินหอม อ.เมือง จ.ปราจีนบุรี 25230</p> <!-- ที่อยู่คณะ -->
+					<p>โทรศัพท์: <a href="tel:037217339">037-217339</a>, <a href="tel:037217340">037-217340-3</a></p> <!-- เบอร์โทรศัพท์คณะ -->
+					<p>แฟกซ์: 037-217317</p> <!-- หมายเลขแฟกซ์ -->
+				</div> <!-- จบข้อมูลที่อยู่ -->
+				<div class="contact-highlight"> <!-- กล่องข้อมูลติดต่อภาษาอังกฤษ -->
+					<h3>Contact Information</h3> <!-- หัวข้อข้อมูลติดต่อ -->
+					<p>Faculty of Industrial Technology and Management, 129 Village No. 21, Noen Hom Subdistrict, Mueang District, Prachin Buri Province 25230</p> <!-- ที่อยู่ภาษาอังกฤษ -->
+					<p><a href="tel:037217339">037-217339</a>, <a href="tel:037217340">037-217340-3</a></p> <!-- เบอร์โทรศัพท์ -->
+					<a href="mailto:pr@fitm.kmutnb.ac.th">pr@fitm.kmutnb.ac.th</a> <!-- ส่งอีเมลถึงคณะ -->
+				</div> <!-- จบกล่องข้อมูลติดต่อ -->
+			</section> <!-- จบข้อมูลติดต่อ -->
+		</div> <!-- จบเลย์เอาต์หลัก -->
+	</main> <!-- จบเนื้อหาหลัก -->
+
+	<footer class="footer"> <!-- ส่วนท้ายเว็บไซต์ -->
+		<div class="contact"> <!-- ข้อมูลติดต่อย่อ -->
+			<h3>ติดต่อสอบถาม</h3> <!-- หัวข้อข้อมูลติดต่อ -->
+			<p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ<br>วิทยาเขตปราจีนบุรี<br>โทร. 037-217-300<br>Email: admission@kmutnb.ac.th</p> <!-- ที่อยู่ เบอร์โทร และอีเมล -->
+		</div> <!-- จบข้อมูลติดต่อย่อ -->
+		<div class="social"> <!-- กลุ่มช่องทางโซเชียล -->
+			<h3>ติดตามเรา</h3> <!-- หัวข้อติดตามข่าวสาร -->
+			<div class="social-icon"><a href="https://www.kmutnb.ac.th/life-in-the-university/prachinburi.aspx" target="_blank" rel="noopener noreferrer" aria-label="ข้อมูลวิทยาเขตปราจีนบุรี">G</a><a href="https://page.line.me/486pbmxg?openQrModal=true" target="_blank" rel="noopener noreferrer" aria-label="LINE มจพ. ปราจีนบุรี">L</a><a href="https://www.facebook.com/FITM.KMUTNB" target="_blank" rel="noopener noreferrer" aria-label="Facebook FITM มจพ.">f</a></div> <!-- ลิงก์ไปยังข้อมูลวิทยาเขต, LINE และ Facebook -->
+		</div> <!-- จบกลุ่มโซเชียล -->
+	</footer> <!-- จบส่วนท้ายเว็บไซต์ -->
+</body> <!-- จบเนื้อหาหน้าเว็บ -->
+</html> <!-- จบเอกสาร HTML -->
