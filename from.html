@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ลงทะเบียนสมัครเรียน</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="register-page">
+
+	<!-- ส่วนหัวเว็บไซต์: แสดงโลโก้และชื่อมหาวิทยาลัย -->
+	<header class="header">
+		<div class="logo">
+			<img src="img/logo_kmutnb.png" alt="Logo มจพ.">
+		</div>
+
+		<div>
+			<h1>รับสมัครนักศึกษา</h1>
+			<p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (วิทยาเขตปราจีนบุรี)</p>
+		</div>
+	</header>
+
+	<!-- เมนูนำทางหลักของเว็บไซต์ -->
+	<nav class="navbar">
+		<a href="index.html">หน้าแรก</a>
+		<a href="from.html">รับสมัคร <span class="arrow">▼</span></a>
+		<a href="group.html">หลักสูตรและคณะ <span class="arrow">▼</span></a>
+		<a href="from2.html">ตรวจสอบสถานะ</a>
+		<a href="news.html">ข่าวสาร <span class="arrow">▼</span></a>
+		<a href="contact.html">ติดต่อ</a>
+		<a href="from.html" class="apply">สมัครเรียน</a>
+	</nav>
+
+	<!-- เนื้อหาหลัก: แบบฟอร์มลงทะเบียนสมัครเรียน -->
+	<main class="register-main">
+		<h2 class="register-title">
+			ลงทะเบียนเพื่อสมัครเรียน (ข้อมูลที่กรอกต้องเป็นของผู้สมัครเข้าศึกษาเท่านั้น)
+		</h2>
+
+		<!-- รับข้อมูลส่วนตัวและข้อมูลสำหรับเข้าสู่ระบบของผู้สมัคร -->
+		<form class="register-form" action="from-success.html" method="get">
+			<input id="application-number-input" type="hidden" name="applicationNumber" value="123">
+			<section class="form-section" aria-labelledby="personal-info-title">
+				<h3 id="personal-info-title">ข้อมูลส่วนตัว</h3>
+				<div class="form-row">
+					<label for="citizen-id">เลขบัตรประชาชน</label>
+					<input id="citizen-id" type="text" inputmode="numeric" required>
+				</div>
+
+				<div class="form-row">
+					<label for="password">รหัสผ่าน</label>
+					<input id="password" type="password" required>
+				</div>
+
+				<div class="form-row">
+					<label for="confirm-password">ยืนยันรหัสผ่าน</label>
+					<input id="confirm-password" type="password" required>
+				</div>
+
+				<div class="form-row">
+					<label for="first-name">ชื่อ</label>
+					<input id="first-name" type="text" required>
+				</div>
+
+				<div class="form-row">
+					<label for="last-name">นามสกุล</label>
+					<input id="last-name" type="text" required>
+				</div>
+
+				<div class="form-row">
+					<label for="email">อีเมล์</label>
+					<input id="email" type="email" required>
+				</div>
+
+				<div class="form-row">
+					<label for="birth-date">วันเดือนปีเกิด</label>
+					<input id="birth-date" type="date" required>
+				</div>
+
+				<div class="form-row">
+					<label for="age">อายุ (ปี)</label>
+					<input id="age" type="number" min="1" max="120" required>
+				</div>
+
+				<div class="form-row">
+					<label for="nationality">สัญชาติ</label>
+					<input id="nationality" type="text" value="ไทย" required>
+				</div>
+
+				<div class="form-row">
+					<label for="religion">ศาสนา</label>
+					<select id="religion" required>
+						<option value="" selected disabled>เลือกศาสนา</option>
+						<option>พุทธ</option>
+						<option>คริสต์</option>
+						<option>อิสลาม</option>
+						<option>ฮินดู</option>
+						<option>ไม่มีศาสนา</option>
+						<option>อื่น ๆ</option>
+					</select>
+				</div>
+
+				<div class="form-row">
+					<label for="profile-image">รูปถ่ายผู้สมัคร</label>
+					<input id="profile-image" type="file" accept="image/*">
+				</div>
+			</section>
+
+			<section class="form-section" aria-labelledby="education-info-title">
+				<h3 id="education-info-title">ข้อมูลการศึกษา</h3>
+				<div class="form-row">
+					<label for="education-level">ระดับการศึกษา</label>
+					<select id="education-level" required>
+						<option value="" selected disabled>เลือกระดับการศึกษา</option>
+						<option>มัธยมศึกษาตอนปลาย</option>
+						<option>ประกาศนียบัตรวิชาชีพ (ปวช.)</option>
+						<option>ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</option>
+						<option>เทียบเท่า</option>
+					</select>
+				</div>
+
+				<div class="form-row">
+					<label for="school-name">สถานศึกษาเดิม</label>
+					<input id="school-name" type="text" required>
+				</div>
+
+				<div class="form-row">
+					<label for="study-program">แผนการเรียน / สาขา</label>
+					<input id="study-program" type="text" required>
+				</div>
+
+				<div class="form-row">
+					<label for="gpa">เกรดเฉลี่ยสะสม (GPA)</label>
+					<input id="gpa" type="number" min="0" max="4" step="0.01" required>
+				</div>
+
+				<div class="form-row">
+					<label for="graduation-year">ปีที่สำเร็จการศึกษา</label>
+					<input id="graduation-year" type="number" min="2500" max="2600" placeholder="เช่น 2569" required>
+				</div>
+
+				<div class="form-row">
+					<label for="grade-file">แนบใบแสดงผลการเรียน</label>
+					<input id="grade-file" type="file" accept=".pdf,.jpg,.jpeg,.png">
+				</div>
+
+				<div class="form-row">
+					<label for="education-details">ข้อมูลการศึกษาเพิ่มเติม</label>
+					<textarea id="education-details" rows="3" placeholder="ระบุข้อมูลเพิ่มเติม (ถ้ามี)"></textarea>
+				</div>
+			</section>
+
+			<button class="register-button" type="submit">ลงทะเบียน</button>
+		</form>
+	</main>
+
+	<!-- ส่วนท้ายเว็บไซต์: ข้อมูลติดต่อและช่องทางติดตาม -->
+	<footer class="footer">
+		<div class="contact">
+			<h3>ติดต่อสอบถาม</h3>
+			<p>
+				มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ<br>
+				วิทยาเขตปราจีนบุรี<br>
+				โทร. 037-217-300<br>
+				Email: admission@kmutnb.ac.th
+			</p>
+		</div>
+
+		<div class="social">
+			<h3>ติดตามเรา</h3>
+			<div class="social-icon">
+				<a href="https://www.kmutnb.ac.th/life-in-the-university/prachinburi.aspx" target="_blank" rel="noopener noreferrer" aria-label="ข้อมูลวิทยาเขตปราจีนบุรี">G</a>
+				<a href="https://page.line.me/486pbmxg?openQrModal=true" target="_blank" rel="noopener noreferrer" aria-label="LINE มจพ. ปราจีนบุรี">L</a>
+				<a href="https://www.facebook.com/FITM.KMUTNB" target="_blank" rel="noopener noreferrer" aria-label="Facebook FITM มจพ.">f</a>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		document.querySelector('.register-form').addEventListener('submit', function () {
+			const today = new Date();
+			const applicationDate = [
+				String(today.getDate()).padStart(2, '0'),
+				String(today.getMonth() + 1).padStart(2, '0'),
+				String(today.getFullYear() + 543)
+			].join('/');
+			localStorage.setItem('applicationDate', applicationDate);
+		});
+	</script>
+
+</body>
+</html>
